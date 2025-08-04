@@ -4,6 +4,7 @@ on:
 jobs:
     CI:
         runs-on: ubuntu-latest
+        environment: homologacao
         steps:
             - name: Fake de deploy em ambiente
               run: echo "Deploy em ambiente de ${{ vars.AMBIENTE_DEPLOY }}"
